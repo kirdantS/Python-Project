@@ -1,0 +1,73 @@
+<!DOCTYPE html><!---HTML 5----->
+
+<html>
+<head>
+          <meta charset="UTF-8">
+    <title>List Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+<body>
+ <div class="msg"><h3>{{ msg }}</h3></div></br></br>
+<h1>Welcome</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-Brand" href="http://127.0.0.1:5000/list"><h1>*</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <div class="badge bg-primary text-wrap" style="width: 8rem height: 5rem;">
+
+
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5000/marathi"><h5>Marathi songs</h5></a>
+            </div></br><br>
+        <div class="badge bg-primary text-wrap" style="width: 6rem height: 5rem;">
+
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5000/music"><h5>Hindi songs</h5></a>
+
+            </div></br><br>
+          <div class="badge bg-primary text-wrap" style="width: 6rem height: 5rem;">
+
+          <a class="nav-link active" align="right" href="http://127.0.0.1:5000/logout" ><h5>Logout</h5></a>
+
+              </div></br><br>
+      </ul>
+    </div>
+  </div>
+</nav>
+ </body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th >Name</th>
+      <th>Email</th>
+      <th >Mobile_No</th>
+        <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+    <tr>
+       <td>{{data[0]}}</td>
+        <td>{{data[1]}}</td>
+        <td>{{data[2]}}</td>
+        <td>{{data[3]}}</td>
+        <td>{{data[5]}}</td>
+    </tr>
+  </tbody>
+
+
+
+<div class="footer text-muted"> © Shubham creation 2021. </div>
+
+</html>
